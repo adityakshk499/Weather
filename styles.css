@@ -2,6 +2,9 @@ html{
     background: url(./cloud.jpg);
     background-size: 100vw 100vh, cover;
     background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+
 }
 
 
@@ -13,7 +16,7 @@ body{
 
 .card{
     position: relative;
-    margin:3% auto;
+    margin: auto;
     width:35vw;
     height:40vw;
  
@@ -32,7 +35,7 @@ body{
     position: absolute;
     top:5%;
     right: 9%;
-    width:25vw;
+    width:75%;
     height:3vw;
     border-color: currentColor;
     background: rgba(255, 255, 255, 0.24);
@@ -54,13 +57,13 @@ body{
     padding:0;
     position:absolute;
     top:20%;
-    right: 7%;
+    right: 6%;
     background: rgba(255, 255, 255, 0.64);
     border-radius: 6px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 1.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(20px);
-    width:30vw;
+    width:90%;
     height: 30vw;
     display: flex;
     flex-direction: column;
@@ -126,14 +129,31 @@ body{
 }
 
 
-/* @media screen and (max-width: 480px){
-
- 
-
-    body {
-
-       
-
+@media  (max-width:400px){
+    .card{
+        position: absolute;
+        width:100%;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        
     }
-
-} */
+}
+@media (min-width:400px) and (max-width:1024px){
+    .card{
+        position: absolute;
+        width:80%;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media (min-width:1024px){
+    .card{
+        position: absolute;
+        width:60%;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+}
